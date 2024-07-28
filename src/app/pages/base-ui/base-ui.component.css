@@ -5,7 +5,8 @@
 
 .conteudo {
   min-height: 87vh;
-  min-width: 90vw;
+  max-width: 90vw;
+  min-width: 89vw;
 }
 
 @media screen {

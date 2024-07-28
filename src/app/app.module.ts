@@ -9,7 +9,6 @@ import { BaseUiComponent } from './pages/base-ui/base-ui.component';
 import { UserListComponent } from './pages/users/user-list/user-list.component';
 import { UserCreateComponent } from './pages/users/user-create/user-create.component';
 import { UserUpdateComponent } from './pages/users/user-update/user-update.component';
-import { TesteComponent } from './pages/teste/teste.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +22,6 @@ import { FormsModule } from '@angular/forms';
     UserListComponent,
     UserCreateComponent,
     UserUpdateComponent,
-    TesteComponent,
     HomeComponent
   ],
   imports: [

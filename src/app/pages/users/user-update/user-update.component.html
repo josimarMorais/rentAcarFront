@@ -1,12 +1,18 @@
-
-<div>
-  <form action="">
-    <label for="id">Id: </label>
-    <input type="text" hidden name="id" [(ngModel)]="id">
-    <label for="nome">Nome: </label>
-    <input type="text" name="nome" [(ngModel)]="nome">
-    <label for="email">Email: </label>
-    <input type="text" name="email" [(ngModel)]="email">
-    <button type="button" (click)="atualizar()" routerLink="/usuarios/list">Salvar</button>
+<div class="container-fluid" >
+  <form action>
+    <div class="mb-3">
+      <input type="text" hidden name="id" [(ngModel)]="id">
+    </div>
+    <div class="mb-3">
+      <label for="nome" class="form-label" >Nome: </label>
+      <input type="text" name="nome" class="form-control" [(ngModel)]="nome">
+    </div>
+    <div>
+      <label for="email" class="form-label">Email: </label>
+      <input type="text" name="email" class="form-control" [(ngModel)]="email">
+    </div>
+    <div class="mb-3">
+      <button type="button"  class="btn btn-success mt-3" (click)="atualizar()">Salvar</button>
+    </div>
   </form>
 </div>
