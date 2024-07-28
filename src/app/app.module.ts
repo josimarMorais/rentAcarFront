@@ -9,6 +9,10 @@ import { BaseUiComponent } from './pages/base-ui/base-ui.component';
 import { UserListComponent } from './pages/users/user-list/user-list.component';
 import { UserCreateComponent } from './pages/users/user-create/user-create.component';
 import { UserUpdateComponent } from './pages/users/user-update/user-update.component';
+import { TesteComponent } from './pages/teste/teste.component';
+import { HomeComponent } from './pages/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { UserUpdateComponent } from './pages/users/user-update/user-update.compo
     BaseUiComponent,
     UserListComponent,
     UserCreateComponent,
-    UserUpdateComponent
+    UserUpdateComponent,
+    TesteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+
+a:hover, li a:hover {
+  text-shadow: 1px 1px 1px #878887;
+}
+
+.activebutton, li .activebutton {
+  color: #3e3158; /* Cor diferente para o link ativo */
+  font-weight: bold; /* Negrito para o link ativo */
+  border-bottom: 2px solid #3e3050;
+}

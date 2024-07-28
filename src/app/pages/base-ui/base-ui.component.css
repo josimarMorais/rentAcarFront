@@ -1,0 +1,13 @@
+.base {
+  display: flex;
+  justify-content: center;
+}
+
+.conteudo {
+  min-height: 87vh;
+  min-width: 90vw;
+}
+
+@media screen {
+
+}

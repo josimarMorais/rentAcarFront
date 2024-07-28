@@ -1,1 +1,12 @@
-<p>user-update works!</p>
+
+<div>
+  <form action="">
+    <label for="id">Id: </label>
+    <input type="text" hidden name="id" [(ngModel)]="id">
+    <label for="nome">Nome: </label>
+    <input type="text" name="nome" [(ngModel)]="nome">
+    <label for="email">Email: </label>
+    <input type="text" name="email" [(ngModel)]="email">
+    <button type="button" (click)="atualizar()" routerLink="/usuarios/list">Salvar</button>
+  </form>
+</div>

@@ -1,1 +1,21 @@
-<p>user-list works!</p>
+<div class="container-fluid m-3">
+  <div>
+    <div>
+      <h2>Lista de usuários cadastrados: </h2>
+    </div>
+    <div class="mt-4 mb-4">
+      <button class="btn btn-success" routerLink="/usuarios/create"> Criar Usuário</button>
+    </div>
+    <div class="container-fluid">
+      <table class="table table-bordered row">
+        <tr  *ngFor="let usuario of usuarios$ | async ">
+          <td hidden>{{usuario.id}}</td>
+          <td class="col-4">{{usuario.nome}}</td>
+          <td class="col-8">{{usuario.email}}</td>
+          <td class="col-1"><a (click)="editarUsuario(usuario)" routerLink=""  class="link-primary" type="button">editar</a></td>
+          <td class="col-1"><a (click)="remover(usuario.id!)" routerLink="/usuarios/list" class="link-danger" type="button">remover</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
