@@ -9,7 +9,7 @@ import { User } from '../_models/user.model';
 })
 export class UserService {
 
-  private url = `${environment.apiUrl}usuarios`;
+  private url = `${environment.apiUrl}api/Users`;
 
   user: any;
 

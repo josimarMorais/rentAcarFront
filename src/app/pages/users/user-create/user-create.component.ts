@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from '../../../_services/user.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,11 +13,11 @@ export class UserCreateComponent {
   nome = '';
   email = '';
 
-  constructor(private userService: UserService){
+  constructor(private userService: UserService, private route: Router){
 
   }
 
   cadastrarUsuario(){
-    this.userService.cadastrarUsuario({nome: this.nome, email: this.email}).subscribe();
+    this.userService.cadastrarUsuario({nome: this.nome, email: this.email}).subscribe(() => this.route.navigate(['/api/Users']));
   }
 }

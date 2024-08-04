@@ -9,8 +9,8 @@ const routes: Routes = [
   {path:'home', component: HomeComponent},
 
   //Rotas do usuário:
-  {path:'usuarios/list', component: UserListComponent},
-  {path: 'usuarios/create', component: UserCreateComponent},
+  {path:'api/Users', component: UserListComponent},
+  {path: 'api/Users/create', component: UserCreateComponent},
   {path: 'usuarios/update', component: UserUpdateComponent},
 
 ];

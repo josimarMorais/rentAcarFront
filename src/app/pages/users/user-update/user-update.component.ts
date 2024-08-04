@@ -27,7 +27,7 @@ export class UserUpdateComponent {
   }
 
   atualizar(){
-    this.userService.editarMusica({id: parseInt(this.id), nome: this.nome, email: this.email}).subscribe( () => {this.route.navigate(['/usuarios/list']);});
+    this.userService.editarMusica({id: parseInt(this.id), nome: this.nome, email: this.email}).subscribe( () => {this.route.navigate(['/api/Users']);});
   }
 
   preencherCampos(user: User){
